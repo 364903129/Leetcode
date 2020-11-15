@@ -1,4 +1,7 @@
 // -----------------------Letter Combinations of a Phone Number - DFS ----------------------
+// 1ms, 39.2MB
+// Time complexity: 3^n * 4^m. where n is the number of 3 letters digit and m is the number of 4 letters digit.
+// Space complexity: 3^n * 4^m. There are 3^n * 4^m solutions need to be stored in result.
 class Solution {
     HashMap<String,String> number = new HashMap<String, String>(){{
         put("2", "abc");
@@ -37,6 +40,9 @@ class Solution {
 }
 
 //--------------------- Letter Combinations of a Phone Number - BFS -------------------------
+// 9ms, 40MB
+// Time complexity: 3^n * 4^m. where n is the number of 3 letters digit and m is the number of 4 letters digit.
+// Space complexity: 3^n * 4^m. There are 3^n * 4^m solutions need to be stored in result. 
 class Solution {
     HashMap<Character,String> number = new HashMap<Character, String>(){{
         put('2', "abc");
