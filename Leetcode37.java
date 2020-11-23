@@ -23,17 +23,21 @@ class Solution {
                     for(char k = '1';k <='9';k++){
                         if(vaild(board, i, j, k)){
                             board[i][j] = k;
+                            //if there are vaild numbers to put into the blank space, return to put another number
                             if(solve(board)){
                                 return true;
+                            //if no vaild numbers to put into the blank space, remove the number.
                             }else{
                                 board[i][j] = '.';
                             }
                         }
                     }
+                    //tried all 9 numbers and not working
                     return false;
                 }
             }
         }
+        //put all the numbers into the blank space.
         return true;
     }
     
